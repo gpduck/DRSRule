@@ -7,7 +7,7 @@
 	RootModule = 'DRSRule.psm1'
 
 	# Version number of this module.
-	ModuleVersion = '1.2.0'
+	ModuleVersion = '1.2.1'
 
 	# ID used to uniquely identify this module
 	GUID = 'f7edec59-261e-43e3-818c-6d92653ff05c'
@@ -43,10 +43,10 @@
 	# ProcessorArchitecture = ''
 
 	# Modules that must be imported into the global environment prior to importing this module
-	# RequiredModules = @()
+	RequiredModules = @('VMware.Vim')
 
 	# Assemblies that must be loaded prior to importing this module
-	RequiredAssemblies = 'VMware.Vim.dll'
+	#RequiredAssemblies = 'VMware.Vim.dll'
 
 	# Script files (.ps1) that are run in the caller's environment prior to importing this module.
 	ScriptsToProcess = 'DRSRule.init.ps1'
