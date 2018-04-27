@@ -1,4 +1,10 @@
-Import-Module -Name VMware.Vim
+if(Get-Module -List -name VMware.Vim) {
+  Import-Module -Name VMware.Vim
+} elseif(Get-Module -List -Name VMware.VimAutomation.Core) {
+  Import-Module -Name VMware.VimAutomation.Core
+} else {
+  throw "Unable to locate module VMware.Vim or VMware.VimAutomation.Core"
+}
 
 $pcliDll = [VMware.Vim.ManagedObjectReference].Assembly.Location
 
