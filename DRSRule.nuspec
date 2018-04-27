@@ -12,4 +12,3 @@
 	<file src="**\*.*" target="" exclude="**\*.proj;**\*.xmlscc;**\*pssproj*;Default.ps1;*.nuspec"/>
   </files>
 </package>
-"@
